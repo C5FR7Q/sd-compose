@@ -15,6 +15,71 @@ As advanced feature it supports [Multi-dimensional themes](https://docs.tokens.s
     * Provide required ***.ttf** fonts into **/res/font** of work project
     * Add **R** import into **TokenFonts.kt** of work project
 
+### Generated code usage example
+
+```Kotlin
+@Composable
+fun Example() {
+    var tokenConfiguration by remember {
+        mutableStateOf(
+            TokenConfiguration(
+                corner = TokenConfiguration.Corner.Rounded,
+                size = TokenConfiguration.Size.Normal,
+                color = TokenConfiguration.Color.Light
+            )
+        )
+    }
+    CompositionLocalProvider(
+        LocalTokenConfiguration provides tokenConfiguration
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(color = Color.LightGray),
+            contentAlignment = Alignment.Center
+        ) {
+            Button(
+                onClick = {
+                    tokenConfiguration = TokenConfiguration(
+                        corner = TokenConfiguration.Corner.entries.random(),
+                        size = TokenConfiguration.Size.entries.random(),
+                        color = TokenConfiguration.Color.entries.random()
+                    )
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun Button(onClick: () -> Unit) {
+    Box(
+        modifier = Modifier
+            .clip(RoundedCornerShape(Tokens.buttonBorderRadius))
+            .border(
+                width = Tokens.buttonBorderWidth,
+                color = Tokens.buttonColorBorder,
+                shape = RoundedCornerShape(Tokens.buttonBorderRadius)
+            )
+            .background(
+                color = Tokens.buttonColorBackground
+            )
+            .clickable(onClick = onClick)
+            .padding(
+                vertical = Tokens.buttonSpacingOuterVertical,
+                horizontal = Tokens.buttonSpacingOuterHorizontal
+            )
+    ) {
+        Text(
+            text = "Example",
+            style = Tokens.typoRegular,
+            color = Tokens.buttonColorContent
+        )
+    }
+}
+```
+
+
 ### Links:
 * [Style Dictionary](https://github.com/amzn/style-dictionary)
 * [Tokens Studio](https://tokens.studio/)
