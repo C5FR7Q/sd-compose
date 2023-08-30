@@ -79,6 +79,8 @@ private fun Button(onClick: () -> Unit) {
 }
 ```
 
+![Aug-31-2023 02-02-04](https://github.com/C5FR7Q/sd-compose/assets/17059563/e3cab0d1-e49a-452f-8a2f-689380b89a87)
+
 
 ### Links
 * [Style Dictionary](https://github.com/amzn/style-dictionary)
