@@ -1,9 +1,9 @@
 module.exports = function ({ dictionary, options, file }) {
-    const lodash = require('lodash');
-    const fs = require('fs');
-    const toPascalCase = require('../utils/toPascalCase');
+    const lodash = require(`lodash`);
+    const fs = require(`fs`);
+    const toPascalCase = require(`../utils/toPascalCase`);
 
-    let metadata = fs.readFileSync('tokens/$metadata.json', 'utf8');
+    let metadata = fs.readFileSync(`tokens/$metadata.json`, `utf8`);
     let tokenSetOrder = JSON.parse(metadata).tokenSetOrder;
 
     tokenSetOrder = tokenSetOrder.map(item => `tokens/${item}.json`);
@@ -21,7 +21,7 @@ module.exports = function ({ dictionary, options, file }) {
         `\n` +
         `\tcompanion object\n`;
 
-    let groupedProperties = lodash.groupBy(allProperties, 'filePath');
+    let groupedProperties = lodash.groupBy(allProperties, `filePath`);
 
     for (key of tokenSetOrder) {
         Object
@@ -36,7 +36,7 @@ module.exports = function ({ dictionary, options, file }) {
                 
                 str = str +
                     `\n` +
-                    `\t// ${toPascalCase(key.split("/")[0])}\n`;
+                    `\t// ${toPascalCase(key.split(`/`)[0])}\n`;
                 
                 tokens.forEach(token => {
                     let originalType = token.original.type;

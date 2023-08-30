@@ -1,10 +1,10 @@
 module.exports = function ({ dictionary, options, file }) {
-    const lodash = require('lodash');
-    const fs = require('fs');
-    const { createPropertyFormatter } = require('style-dictionary/lib/common/formatHelpers');
+    const lodash = require(`lodash`);
+    const fs = require(`fs`);
+    const { createPropertyFormatter } = require(`style-dictionary/lib/common/formatHelpers`);
 
     let tokenSetOrder;
-    let metadata = fs.readFileSync('tokens/$metadata.json', 'utf8');
+    let metadata = fs.readFileSync(`tokens/$metadata.json`, `utf8`);
     tokenSetOrder = JSON.parse(metadata).tokenSetOrder;
     tokenSetOrder = tokenSetOrder.map(item => `tokens/${item}.json`);
 
@@ -26,14 +26,14 @@ module.exports = function ({ dictionary, options, file }) {
         `\n` +
         `object ${file.className}: TokenTheme {\n`;
 
-    let groupedProperties = lodash.groupBy(allProperties, 'filePath');
+    let groupedProperties = lodash.groupBy(allProperties, `filePath`);
     let outputReferences = options.outputReferences;
     let formatProperty = createPropertyFormatter({
         outputReferences,
         dictionary,
         formatting: {
-          suffix: '',
-          commentStyle: 'none' // We will add the comment in the format template
+          suffix: ``,
+          commentStyle: `none` // We will add the comment in the format template
         }
       });
 

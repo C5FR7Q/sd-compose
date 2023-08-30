@@ -1,8 +1,8 @@
 module.exports = function ({ dictionary, options, file }) {
-    const fs = require('fs');
-    const toPascalCase = require('../utils/toPascalCase');
+    const fs = require(`fs`);
+    const toPascalCase = require(`../utils/toPascalCase`);
 
-    let metadata = fs.readFileSync('tokens/$metadata.json', 'utf8');
+    let metadata = fs.readFileSync(`tokens/$metadata.json`, `utf8`);
     let tokenSetOrder = JSON.parse(metadata).tokenSetOrder;
 
     let str = `package ${file.packageName}\n` +
