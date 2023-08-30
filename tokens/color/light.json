@@ -1,0 +1,24 @@
+{
+  "color": {
+    "semantic": {
+      "background": {
+        "color": {
+          "value": "{color.white}",
+          "type": "color"
+        }
+      },
+      "content": {
+        "color": {
+          "value": "{color.black}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "color": {
+          "value": "{color.black}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

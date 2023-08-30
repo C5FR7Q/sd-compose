@@ -1,0 +1,56 @@
+[
+  {
+    "name": "light",
+    "group": "color",
+    "selectedTokenSets": {
+      "global": "source",
+      "color/light": "enabled",
+      "theme": "enabled"
+    }
+  },
+  {
+    "name": "dark",
+    "group": "color",
+    "selectedTokenSets": {
+      "global": "source",
+      "color/dark": "enabled",
+      "theme": "enabled"
+    }
+  },
+  {
+    "name": "rounded",
+    "group": "corner",
+    "selectedTokenSets": {
+      "global": "source",
+      "corner/rounded": "enabled",
+      "theme": "enabled"
+    }
+  },
+  {
+    "name": "sharp",
+    "group": "corner",
+    "selectedTokenSets": {
+      "global": "source",
+      "corner/sharp": "enabled",
+      "theme": "enabled"
+    }
+  },
+  {
+    "name": "normal",
+    "group": "size",
+    "selectedTokenSets": {
+      "global": "source",
+      "size/normal": "enabled",
+      "theme": "enabled"
+    }
+  },
+  {
+    "name": "large",
+    "group": "size",
+    "selectedTokenSets": {
+      "global": "source",
+      "size/large": "enabled",
+      "theme": "enabled"
+    }
+  }
+]

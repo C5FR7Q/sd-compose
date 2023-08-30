@@ -1,0 +1,53 @@
+{
+  "color": {
+    "black": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "white": {
+      "value": "#ffffff",
+      "type": "color"
+    }
+  },
+  "borderWidth": {
+    "x1": {
+      "value": "1",
+      "type": "borderWidth"
+    },
+    "x2": {
+      "value": "{borderWidth.x1} *2",
+      "type": "borderWidth"
+    }
+  },
+  "opacity": {
+    "default": {
+      "value": "100%",
+      "type": "opacity"
+    },
+    "disabled": {
+      "value": "50%",
+      "type": "opacity"
+    }
+  },
+  "typo": {
+    "regular": {
+      "value": {
+        "fontFamily": "Roboto",
+        "lineHeight": "24",
+        "fontSize": "18",
+        "letterSpacing": "2%"
+      },
+      "type": "typography"
+    },
+    "header": {
+      "value": {
+        "fontFamily": "Montserrat",
+        "lineHeight": "44",
+        "fontSize": "24",
+        "letterSpacing": "1.25",
+        "fontWeight": "Bold Italic"
+      },
+      "type": "typography"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "spacing": {
+    "x1": {
+      "value": "4",
+      "type": "spacing"
+    },
+    "x2": {
+      "value": "{spacing.x1} *2",
+      "type": "spacing"
+    },
+    "x4": {
+      "value": "{spacing.x1} *4",
+      "type": "spacing"
+    },
+    "x8": {
+      "value": "{spacing.x1} *8",
+      "type": "spacing"
+    }
+  }
+}

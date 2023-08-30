@@ -1,0 +1,12 @@
+{
+  "tokenSetOrder": [
+    "global",
+    "corner/rounded",
+    "corner/sharp",
+    "size/normal",
+    "size/large",
+    "color/light",
+    "color/dark",
+    "theme"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "borderRadius": {
+    "x1": {
+      "value": "0",
+      "type": "borderRadius"
+    },
+    "x2": {
+      "value": "{borderRadius.x1} *2",
+      "type": "borderRadius"
+    },
+    "x3": {
+      "value": "{borderRadius.x1} *3",
+      "type": "borderRadius"
+    },
+    "x4": {
+      "value": "{borderRadius.x1} *4",
+      "type": "borderRadius"
+    },
+    "full": {
+      "value": "0",
+      "type": "borderRadius"
+    }
+  }
+}
