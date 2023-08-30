@@ -12,8 +12,8 @@ As advanced feature it supports [Multi-dimensional themes](https://docs.tokens.s
 4. Run **node config.js** from the root of utility
 5. Copy content from **/build/compose** and move it into work project
 6. In case of non empty **/build/compose/TokenFonts.kt**
- * Provide required ***.ttf** fonts into **/res/font** of work project
- * Add **R** import into **TokenFonts.kt** of work project
+    * Provide required ***.ttf** fonts into **/res/font** of work project
+    * Add **R** import into **TokenFonts.kt** of work project
 
 ### Links:
 * [Style Dictionary](https://github.com/amzn/style-dictionary)
