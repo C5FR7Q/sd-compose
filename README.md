@@ -5,7 +5,7 @@ As advanced feature it supports [Multi-dimensional themes](https://docs.tokens.s
 ### Requirements
 1. Install npm & node ([link](https://nodejs.org/en/download))
 
-### How to use generate **.kt** files:
+### How to use generate **.kt** files
 1. Change **packageName** in **config.js**
 2. Replace data in **/tokens** package
 3. Run **npm i** from the root of utility
@@ -80,7 +80,7 @@ private fun Button(onClick: () -> Unit) {
 ```
 
 
-### Links:
+### Links
 * [Style Dictionary](https://github.com/amzn/style-dictionary)
 * [Tokens Studio](https://tokens.studio/)
 * [Style Dictionary utilities from Tokens Studio](https://github.com/tokens-studio/sd-transforms)
