@@ -1,4 +1,4 @@
-Utility that allows to generate **Jetpack Compose** code for design tokens from **Token Studio**
+Utility that allows to generate **Jetpack Compose** code for design tokens from **Tokens Studio**
 
 As advanced feature it supports [Multi-dimensional themes](https://docs.tokens.studio/themes/themes-pro)
 
@@ -17,5 +17,5 @@ As advanced feature it supports [Multi-dimensional themes](https://docs.tokens.s
 
 ### Links:
 * [Style Dictionary](https://github.com/amzn/style-dictionary)
-* [Token Studio](https://tokens.studio/)
-* [Style Dictionary utilities from Token Studio](https://github.com/tokens-studio/sd-transforms)
+* [Tokens Studio](https://tokens.studio/)
+* [Style Dictionary utilities from Tokens Studio](https://github.com/tokens-studio/sd-transforms)
